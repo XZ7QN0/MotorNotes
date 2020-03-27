@@ -11,16 +11,15 @@ Group Project - README Template
 
 ## Overview
 ### Description
-[Description of your app]
+Keep track of all your car related needs, from keeping track of mileage to tracking fuel costs and repairs, MotorNotes will help you keep track of your vehicle’s health.
 
 ### App Evaluation
-[Evaluation of your app across the following attributes]
-- **Category:**
-- **Mobile:**
-- **Story:**
-- **Market:**
-- **Habit:**
-- **Scope:**
+- **Category:** Utility
+- **Mobile:** This app would be primarily developed for mobile users, but would perhaps be viable as a web application that users can access online.
+- **Story:** Records information on service records, fuel records, and general information about the vehicle.
+- **Market:** Anyone that owns a vehicle could use this app to keep track of their car’s maintenance status and overall health.
+- **Habit:** This app would be used occasionally, as the user sees fit. For instance, the user can use this app when filling up on gas and after they receive their vehicle from a car shop.
+- **Scope:** Our app would first show the user how to work with the application and how to record information for their vehicle. This application could evolve to giving users useful information, such as affordable gas stations near their location.
 
 ## Product Spec
 
@@ -28,13 +27,28 @@ Group Project - README Template
 
 **Required Must-have Stories**
 
-* [fill in your required user stories here]
-* ...
+- [] User sees app icon in home screen and styled launch screen
+- [] User can log in and log out
+- [] User stays logged in across restarts.
+- [] User can create a vehicle.
+- [] User can record information about their vehicle.
+- [] User can create service records for their vehicle.
+- [] User can create fuel records for their vehicle.
+- [] User can access information related to their vehicle.
+- [] User can change settings for their vehicle.
+- [] User can update information and records for their vehicle.
+- [] User can delete information and records for their vehicle.
+- [] User can delete their vehicle.
 
 **Optional Nice-to-have Stories**
 
-* [fill in your required user stories here]
-* ...
+* [] User can record insurance information for their vehicle.
+* [] User can share their vehicle records with other users.
+* [] User can generate metric reports for their vehicle.
+* [] User can find nearby affordable gas stations to fill up.
+* [] User gets notified of last oil change, tire rotation, etc.
+* [] User can record favorite car shops and service locations.
+* [] User can record two vehicles per account.
 
 ### 2. Screen Archetypes
 
