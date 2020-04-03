@@ -77,17 +77,84 @@ Keep track of all your car related needs, from keeping track of mileage to track
    * ...
 
 ## Wireframes
-[Add picture of your hand sketched wireframes in this section]
 <img src="wireframes/design_mockup_car_view.png" width=600>
 <img src="wireframes/fuel_view.png" width=600>
 <img src="wireframes/service_record_view.png" width=600>
 <img src="wireframes/settings_view.png" width=600>
 
+## Wireframes
+
 ## Schema 
-[This section will be completed in Unit 9]
 ### Models
-[Add table of models]
+#### Car
+
+   | Property          | Type     | Description |
+   | -------------     | -------- | ------------|
+   | objectId          | String   | Unique ID for the user's car object |
+   | carImage          | File     | User can insert an image of the car |
+   | vin               | String   | User can put their car's VIN number. |
+   | odometer          | Number   | User can put their car's odometer. |
+   | make              | String   | The user's make for their vehicle (i.e. Ford) |
+   | model             | String   | The user's model for their vehicle (i.e. Mustang) |
+   | plate_num         | String   | The user's license plates for their vehicle |
+   | car_nickname      | String   | The user's nickname for their vehicle (optional) |
+   | color             | String   | The user's vehicle color. |
+   | registration_date | DateTime | The user's vehicle registration date. |
+   | datePosted        | DateTime | Date when user created car object |
+   | dateUpdated       | DateTime | Date when user updates car object|
+
+#### Fuel
+
+   | Property          | Type     | Description |
+   | -------------     | -------- | ------------|
+   | objectId          | String   | Unique ID for the user's fuel record |
+   | receiptImage      | File     | User can insert an image of the fuel receipt |
+   | odometer          | Number   | User can put their car's odometer. |
+   | gallonsFilledUp   | Number   | User can put how many gallons they filled up with their vehicle |
+   | gasStation        | String   | The name of the gas station the user filled up at |
+   | gasPricePerGallon | Number   | The price per gallon that the user paid for |
+   | total             | Number   | The total cost that the user spent on filling up on gas |
+   | gasType           | String   | The type of gas the user filled their vehicle up with (Regular, Unleaded, Premium) |
+   | gasNotes          | String   | General notes that the user may want to enter regarding their fillup. |
+   | dateFillUp        | DateTime | The date the user filled up their vehicle. |
+   | datePosted        | DateTime | Date when user created car object |
+   | dateUpdated       | DateTime | Date when user updates car object|
+   
+#### Service
+
+   | Property      | Type     | Description |
+   | ------------- | -------- | ------------|
+   | objectId      | String   | Unique ID for the user's service record |
+   | serviceImage  | File     | User can insert an image of the service record |
+   | odometer      | Number   | User can put their car's odometer. |
+   | serviceType   | String   | The type of service the user had performed on their vehicle. |
+   | shopName      | String   | The name of the car shop the user took their car to. |
+   | shopLocation  | String   | The car shop's location that the user took their vehicle to. |
+   | total         | String   | The total cost that the user spent on car repairs. |
+   | serviceNotes  | String   | General notes that the user may want to enter regarding their service. |
+   | serviceDate   | DateTime | The date the user got their vehicle from the shop. |
+   | datePosted    | DateTime | Date when user created car object |
+   | dateUpdated   | DateTime | Date when user updates car object|
+   
 ### Networking
-- [Add list of network requests by screen ]
-- [Create basic snippets for each Parse network request]
-- [OPTIONAL: List endpoints if using existing API such as Yelp]
+- Home Screen
+    - (Read/GET) Query all cars where user is owner
+    - (Create/POST) Create a new car for the user
+- Car View Screen
+    - (Read/GET) Query all information about the current car
+    - (Create/POST) Create a new service record
+    - (Create/POST) Create a new fuel record
+    - (Update/PUT) Update information about the car
+    - (Delete) Delete the current car
+- Fuel View Screen
+    - (Read/GET) Query all information about fuel records for the current car
+    - (Create/POST) Create individual fuel record
+    - (Update/PUT) Update fuel record information about the car
+    - (Delete) Delete the fuel record
+- Service View Screen
+    - (Read/GET) Query all information about service records for the current car
+    - (Create/POST) Create individual service record
+    - (Update/PUT) Update service record information about the car
+    - (Delete) Delete the service record
+- Settings View
+    - (Read/GET) Fetch information about user’s account
