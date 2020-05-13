@@ -98,10 +98,6 @@ Temporary Items
 # Xcode
 # gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-
-
-
-
 ## Playgrounds
 timeline.xctimeline
 playground.xcworkspace
@@ -167,3 +163,6 @@ Dependencies/
 ## Xcode Project
 MotorNotes.xcodeproj/project.pbxproj
 MotorNotes/Settings/GoogleService-Info.plist
+
+## Miscellaneous Notes
+Car\ Record\ App/
